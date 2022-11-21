@@ -1,0 +1,36 @@
+.header .yllwBtn {
+  padding: 0;
+}
+
+.yllwBtn {
+  color: white;
+  background-color: rgb(255 175 0);
+  padding: 18px 40px;
+  border-radius: 10px;
+  border: transparent;
+  width: 230px;
+}
+
+@media screen and (max-width: 1342px) {
+  .yllwBtn {
+    font-size: 10px;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header .yllwBtn {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header .yllwBtn {
+    font-size: 8px;
+    padding: 8px 0px;
+  }
+  .yllwBtn {
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  z-index: 100;
+  width: 100vw;
+  height: 40px;
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  background-image: linear-gradient(59deg, rgb(94, 3, 164), rgb(19, 1, 44));
+}
+
+.header a:first-child,
+.header button:last-child {
+  margin: 0px 20px;
+}
+
+.h1-heading {
+  color: rgb(78, 79, 81);
+  text-align: center;
+  font-size: 45px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  padding-top: 10px;
+}
+
+.menu ul li {
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 1070px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header img:first-child {
+    width: 76px;
+    height: 30px;
+  }
+}

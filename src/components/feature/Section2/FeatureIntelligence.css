@@ -1,0 +1,32 @@
+#section-2 {
+  padding: 100px 50px;
+}
+
+#section-2 .gridParent {
+  display: grid;
+  gap: 60px 60px;
+  grid-template-areas:
+    "card-0 card-1"
+    "card-2 card-3"
+    "card-4 card-5";
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1342px) {
+  #section-2 .gridParent {
+    gap: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  #section-2 .gridParent {
+    gap: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #section-2 .gridParent {
+    display: block;
+  }
+}

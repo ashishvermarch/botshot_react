@@ -1,0 +1,76 @@
+.smallMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.smallMenu div {
+  margin: 30px 100px;
+  color: rgb(62, 62, 156);
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(2, 2, 72);
+}
+
+.smallMenu div:last-child {
+  opacity: 0.4;
+  border: none;
+}
+
+.blogsCards {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#lastBtn {
+  border: 2px solid rgb(2, 2, 72);
+  border-radius: 40px;
+  color: rgb(2, 2, 72);
+  background-color: white;
+  padding: 20px 80px;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+
+#lastBtn:hover {
+  background-color: rgb(2, 2, 72);
+  color: white;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+@media screen and (max-width: 1572px) {
+  .smallMenu div {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1342px) {
+  .blogsCards {
+    display: grid;
+    grid-template-areas:
+      "B-card-1 B-card-2"
+      "B-card-3 ...";
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .blogsCards {
+    display: block;
+  }
+
+  .smallMenu div {
+    margin: 20px 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  #lastBtn {
+    padding: 10px 30px;
+  }
+}

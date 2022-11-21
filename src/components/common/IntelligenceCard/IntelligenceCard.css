@@ -1,0 +1,61 @@
+.card {
+  background-color: rgb(250 250 250);
+  max-width: 600px;
+  min-height: 200px;
+  border: 1px solid rgb(234, 230, 230);
+  padding: 30px 30px;
+}
+
+.card img:first-child {
+  width: 100px;
+  height: 80px;
+  align-items: center;
+}
+
+.card div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card div:first-child h1 {
+  font-size: 35px;
+  color: rgb(78, 79, 81);
+}
+
+.card div:last-child {
+  color: rgb(151, 95, 85);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 803px) {
+  .card div:first-child h1 {
+    font-size: 23px;
+  }
+
+  .card div:first-child img {
+    width: 70px;
+    height: 60px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card div:first-child {
+    display: block;
+  }
+
+  .card div:first-child h1 {
+    font-size: 15px;
+    width: fit-content;
+  }
+
+  .card {
+    padding: 20px 20px 0px 20px;
+    margin: 20px 0px;
+  }
+}

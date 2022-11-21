@@ -1,0 +1,198 @@
+footer {
+  margin-top: 50px;
+}
+
+#footerPart1 {
+  display: flex;
+  background-image: linear-gradient(59deg, rgb(52 0 128), rgb(27, 2, 65));
+  color: white;
+  width: auto;
+}
+
+.listParent {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.list {
+  padding: 20px;
+  margin: 10px 40px 10px 40px;
+}
+
+.list h2 {
+  font-size: 25px;
+}
+
+.list ul {
+  font-size: 18px;
+  padding: 30px;
+}
+
+.list ul li {
+  padding-bottom: 15px;
+}
+
+.footer-left-parent {
+  width: auto;
+  margin: 40px 90px;
+}
+
+.footer-right-parent {
+  margin-bottom: 50px;
+}
+
+.footerLogo img {
+  width: 200px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.footerIcons img {
+  padding: 20px 20px 20px 0px;
+  margin-bottom: 25px;
+}
+
+.footerIcons img:last-child {
+  width: 46px;
+  height: 43px;
+}
+
+.address,
+.phnNo {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.address img,
+.phnNo img {
+  width: 46px;
+  height: 43px;
+}
+
+.address img {
+  padding-top: 10px;
+}
+
+.address div:last-child,
+.phnNo div:last-child {
+  margin: 10px 10px 10px 40px;
+}
+
+.address,
+.phnNo {
+  font-size: 20px;
+}
+
+.imageList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footerPart2 {
+  background-color: rgb(10 0 58);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px;
+  color: rgb(158, 158, 161);
+  font-size: 20px;
+  width: auto;
+}
+
+@media screen and (max-width: 1572px) {
+  #footerPart1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLogo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  .listParent {
+    display: grid;
+    grid-template-areas:
+      "list1 list2"
+      "list3 ...";
+  }
+
+  #footerPart2 {
+    flex-direction: column;
+  }
+  #footerPart2 div {
+    padding: 5px 40px;
+    text-align: center;
+  }
+  .imageList {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .imageList img {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footerLogo img :first-child {
+    width: auto;
+  }
+
+  .footerIcons {
+    text-align: center;
+  }
+
+  .listParent {
+    display: block;
+  }
+
+  .imageList img {
+    width: 70px;
+    height: 75px;
+  }
+
+  .listParent {
+    margin: 40px 0px;
+  }
+  .footer-left-parent {
+    margin: 40px 0px;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  #footerPart2 div {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .footerLogo img {
+    width: 90px;
+    height: 39px;
+  }
+  .footerIcons img:last-child {
+    width: 29px;
+    height: 30px;
+  }
+  .address img,
+  .phnNo img {
+    width: 24px;
+    height: 23px;
+  }
+
+  .address div:last-child,
+  .phnNo div:last-child {
+    font-size: 14px;
+  }
+
+  .list h2 {
+    font-size: 20px;
+  }
+
+  .list ul li {
+    font-size: 14px;
+  }
+}
