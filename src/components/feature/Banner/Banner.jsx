@@ -1,5 +1,5 @@
 import React from "react";
-import YellowButton from "../../common/YellowButton/YellowButton";
+import YellowButton from "../../common/YellowButton";
 import "./Banner.css";
 
 const Banner = () => {
@@ -10,7 +10,7 @@ const Banner = () => {
           <img
             id="imgConnect"
             src="https://d28fok4odypdh0.cloudfront.net/cl88ny2jw000b0k33bdpxfgq2.webp"
-            alt="connect"
+            alt="Neural connect"
           />
         </div>
         <div id="frontWall_part1">
@@ -26,7 +26,7 @@ const Banner = () => {
           <img
             id="imgConnect"
             src="https://d28fok4odypdh0.cloudfront.net/cl88ny2jw000b0k33bdpxfgq2.webp"
-            alt="connect"
+            alt="Neural connect"
           />
         </div>
       </div>

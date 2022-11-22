@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../../common/Heading/Heading";
-import IntelligenceCard from "../../common/IntelligenceCard/IntelligenceCard";
+import Heading from "../../common/Heading";
+import IntelligenceCard from "../../common/IntelligenceCard/index";
 import "./FeatureIntelligence.css";
 
 const FeatureIntelligence = () => {
@@ -11,6 +11,7 @@ const FeatureIntelligence = () => {
       cardH1Title: "Live Agent Transfer hello",
       cardPara:
         "An AI-powered chatbot working 24/7, while allowing your staff to take control of the conversation whenever needed",
+      alternative: "neural brain",
     },
     {
       cardImgUrl:
@@ -18,6 +19,8 @@ const FeatureIntelligence = () => {
       cardH1Title: "Humanize Guest Conversation",
       cardPara:
         "Respond to the guests suitably through Freddie by BOTSHOT which is language-intelligent and provide accurate answers to guests through self-learning loop",
+
+      alternative: "human",
     },
     {
       cardImgUrl:
@@ -25,6 +28,8 @@ const FeatureIntelligence = () => {
       cardH1Title: "Omni Channel Presence",
       cardPara:
         "Engage and interact with guests on the channel of their choice - WhatsApp, Messenger, Viber etc. and provide delightful conversational experiences",
+
+      alternative: "network molecule",
     },
     {
       cardImgUrl:
@@ -32,6 +37,8 @@ const FeatureIntelligence = () => {
       cardH1Title: "Customise your Conversation Flow",
       cardPara:
         "Customise the guest conversation flow by letting your guests connect and interact with Freddie using emotional intelligence",
+
+      alternative: "flow",
     },
     {
       cardImgUrl:
@@ -39,6 +46,8 @@ const FeatureIntelligence = () => {
       cardH1Title: "FAQs and Enquiries",
       cardPara:
         "Provide instant 24x7 support to your guests by automating the replies to FAQs and general inquires through Freddie by BOTSHOT",
+
+      alternative: "chat",
     },
     {
       cardImgUrl:
@@ -46,30 +55,30 @@ const FeatureIntelligence = () => {
       cardH1Title: "Emotional & Intelligent Conversations",
       cardPara:
         "Revolutionise guest experience by using empathetic AI through Freddie by BOTSHOT for better guest communication",
+
+      alternative: "smilies",
     },
   ];
 
   return (
-    <>
-      <section id="section-2">
-        <Heading title={"Features of Conversational Intelligence"} />
+    <section id="section-2">
+      <Heading title={"Features of Conversational Intelligence"} />
 
-        <div class="gridParent">
-          {featureData.map((card, idx) => {
-            return (
-              <div class={`card-${idx}`} key={card.cardH1Title}>
-                <IntelligenceCard
-                  cardImgUrl={card.cardImgUrl}
-                  cardH1Title={card.cardH1Title}
-                  cardPara={card.cardPara}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-      ;
-    </>
+      <div class="gridParent">
+        {featureData.map((card, idx) => {
+          return (
+            <div class={`card-${idx}`} key={card.cardH1Title}>
+              <IntelligenceCard
+                cardImgUrl={card.cardImgUrl}
+                cardH1Title={card.cardH1Title}
+                cardPara={card.cardPara}
+                alternative={card.alternative}
+              />
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

@@ -1,8 +1,14 @@
-import React from "react";
-import BlueButton from "../BlueButton/BlueButton";
+import BlueButton from "../BlueButton/index";
 import "./styles.css";
 
-const Card = ({ heading, description, buttonLabel, imgSrc, isRow }) => {
+const Card = ({
+  heading,
+  description,
+  buttonLabel,
+  imgSrc,
+  isRow,
+  alternative,
+}) => {
   return (
     <div className={isRow ? "mainWrapper" : "mainWrapperReverse"}>
       <div className="textAndButton">
@@ -11,7 +17,7 @@ const Card = ({ heading, description, buttonLabel, imgSrc, isRow }) => {
         <BlueButton title={buttonLabel} />
       </div>
       <div className="image">
-        <img src={imgSrc} alt="/" />
+        <img src={imgSrc} alt={alternative} />
       </div>
     </div>
   );

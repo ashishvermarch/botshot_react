@@ -1,5 +1,5 @@
 import Card from "../../common/AdvantageCard";
-import Heading from "../../common/Heading/Heading";
+import Heading from "../../common/Heading";
 
 const cardData = [
   {
@@ -8,6 +8,7 @@ const cardData = [
       "With active learning, Freddie by BOTSHOT can use past data to understand the personality and context of the conversation to improve suggestions",
     buttonLabel: "Improve Predictions",
     imgSrc: "https://botshot.ai/_next/static/media/betterInsight.80922e8b.png",
+    alternative: "learning graph",
   },
   {
     heading: "Speak in Guests' Language",
@@ -15,6 +16,7 @@ const cardData = [
       " Freddie by BOTSHOT can train itself in 100+ languages to understand and respond to guest queries better",
     buttonLabel: "Be Multi Lingual",
     imgSrc: "https://botshot.ai/_next/static/media/reduceCost.7b1adbaf.png",
+    alternative: "guest language",
   },
   {
     heading: "Reduce Cost",
@@ -22,6 +24,7 @@ const cardData = [
       " Reduce manual workflow and repetitive tasks by integrating intelligent bots which increase your productivity and reduce cost",
     buttonLabel: "Improve Profitability",
     imgSrc: "https://botshot.ai/_next/static/media/ciReducedCost.a5df14df.png",
+    alternative: "cost cutting",
   },
   {
     heading: "Real-time Availability during Non-Business Hours",
@@ -30,29 +33,31 @@ const cardData = [
     buttonLabel: "24-Hour Support",
     imgSrc:
       "https://botshot.ai/_next/static/media/realTimeAvailability.78242367.png",
+    alternative: "insightful",
   },
 ];
 
 const Advantage = () => {
   return (
-    <>
-      <section id="section-3">
-        <div>
-          <Heading title={"Advantage"} />
-        </div>
-        {cardData.map(({ heading, description, buttonLabel, imgSrc }, idx) => {
+    <section id="section-3">
+      <div>
+        <Heading title={"Advantage"} />
+      </div>
+      {cardData.map(
+        ({ heading, description, buttonLabel, imgSrc, alternative }, idx) => {
           return (
             <Card
               heading={heading}
               description={description}
               buttonLabel={buttonLabel}
               imgSrc={imgSrc}
+              alternative={alternative}
               isRow={idx % 2 === 0}
             />
           );
-        })}
-      </section>
-    </>
+        }
+      )}
+    </section>
   );
 };
 

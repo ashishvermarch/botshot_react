@@ -9,7 +9,7 @@ const Footer = () => {
             <a href="/">
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FbotshotWhiteLogo.883763b6.png&w=128&q=75"
-                alt=""
+                alt="botshot logo"
               />
             </a>
           </div>
@@ -17,25 +17,25 @@ const Footer = () => {
             <a href="/">
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffacebook.4def862e.png&w=48&q=75"
-                alt="icon"
+                alt="facebook"
               />
             </a>
             <a href="/">
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finstagram.6e450324.png&w=48&q=75"
-                alt="icon"
+                alt="instagram"
               />
             </a>
             <a href="/">
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flinkedin.9316b5ef.png&w=48&q=75"
-                alt="icon"
+                alt="linkedin"
               />
             </a>
             <a href="/">
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fyoutube.1cdea8fa.png&w=64&q=75"
-                alt="icon"
+                alt="Youtube"
               />
             </a>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
             <div>
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flocation.32762941.png&w=48&q=75"
-                alt="icon"
+                alt="address"
               />
             </div>
             <div>
@@ -58,7 +58,7 @@ const Footer = () => {
             <div>
               <img
                 src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmobile.e45f37bf.png&w=64&q=75"
-                alt="icon"
+                alt="phoneNo"
               />
             </div>
             <div>+91 9560519146</div>
@@ -128,19 +128,19 @@ const Footer = () => {
             <div>
               <img
                 src="https://botshot.ai/_next/image?url=https%3A%2F%2Fd28fok4odypdh0.cloudfront.net%2Fcl5232fh600330iyycvii6pht.png&w=64&q=75"
-                alt="pictre"
+                alt="enterprise award"
               />
             </div>
             <div>
               <img
                 src="https://botshot.ai/_next/image?url=https%3A%2F%2Fd28fok4odypdh0.cloudfront.net%2Fcl523354700350iyy1ajwfd73.png&w=256&q=75"
-                alt="pictre"
+                alt="iso icon"
               />
             </div>
             <div>
               <img
                 src="https://botshot.ai/_next/image?url=https%3A%2F%2Fd28fok4odypdh0.cloudfront.net%2Fcl5233ohf00370iyydtcd8ns0.png&w=96&q=75"
-                alt="pictre"
+                alt="Hotel it tech report"
               />
             </div>
           </div>

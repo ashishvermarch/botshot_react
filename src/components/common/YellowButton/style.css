@@ -1,8 +1,8 @@
-.header .yllwBtn {
+.header .yellowButton {
   padding: 0;
 }
 
-.yllwBtn {
+.yellowButton {
   color: white;
   background-color: rgb(255 175 0);
   padding: 18px 40px;
@@ -12,25 +12,25 @@
 }
 
 @media screen and (max-width: 1342px) {
-  .yllwBtn {
+  .yellowButton {
     font-size: 10px;
     width: fit-content;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .header .yllwBtn {
+  .header .yellowButton {
     font-size: 10px;
     padding: 10px 5px;
   }
 }
 
 @media screen and (max-width: 290px) {
-  .header .yllwBtn {
+  .header .yellowButton {
     font-size: 8px;
     padding: 8px 0px;
   }
-  .yllwBtn {
+  .yellowButton {
     padding: 8px 10px;
   }
 }

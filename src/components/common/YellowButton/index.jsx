@@ -1,9 +1,9 @@
 import React from "react";
-import "./YellowButton.css";
+import "./style.css";
 
 const YellowButton = () => {
   return (
-    <button class="yllwBtn">
+    <button class="yellowButton">
       <a href="/">Schedule A Demo</a>
     </button>
   );

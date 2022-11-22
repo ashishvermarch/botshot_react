@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-#lastBtn {
+#lastButton {
   border: 2px solid rgb(2, 2, 72);
   border-radius: 40px;
   color: rgb(2, 2, 72);
@@ -33,12 +33,12 @@
   transition: 0.5s ease;
 }
 
-#lastBtn:hover {
+#lastButton:hover {
   background-color: rgb(2, 2, 72);
   color: white;
 }
 
-.centerBtn {
+.centerButton {
   text-align: center;
 }
 
@@ -70,7 +70,7 @@
 }
 
 @media screen and (max-width: 290px) {
-  #lastBtn {
+  #lastButton {
     padding: 10px 30px;
   }
 }

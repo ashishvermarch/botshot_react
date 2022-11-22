@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../../common/Heading/Heading";
-import KnowledgeCard from "../../common/KnowledgeCard/KnowledgeCard";
+import Heading from "../../common/Heading";
+import KnowledgeCard from "../../common/KnowledgeCard/index";
 import "./KnowledgeCenter.css";
 const KnowledgeCenter = () => {
   const knowledgeCardData = [
@@ -10,6 +10,8 @@ const KnowledgeCenter = () => {
       h4Title: "Chatbot for Hospitality Industry",
       paraOfCard:
         "If you’re in the hospitality industry, you must use chatbot to reduce cost, improve guest experience and guest service using AI-powered chatbot.",
+
+      alternative: "hospitality chatbot",
     },
     {
       imgUrl:
@@ -17,6 +19,8 @@ const KnowledgeCenter = () => {
       h4Title: "7 Hotel Renovation Ideas that will WOW Your Guests",
       paraOfCard:
         "If you’re the owner of a hotel, you must check out the 7 hotel renovation ideas that will definitely WOW your guests and improve the experience.",
+
+      alternative: "hotel renovation",
     },
     {
       imgUrl:
@@ -24,6 +28,8 @@ const KnowledgeCenter = () => {
       h4Title: "WhatsApp Business Solution for Hotels",
       paraOfCard:
         "Hotels should use WhatsApp Business Solution to stay in touch with guests who may need help or assistance while they’re staying at the hotel.",
+
+      alternative: "whatsapp business",
     },
   ];
 
@@ -41,12 +47,13 @@ const KnowledgeCenter = () => {
               imgUrl={card.imgUrl}
               h4Title={card.h4Title}
               paraOfCard={card.paraOfCard}
+              alternative={card.alternative}
             />
           );
         })}
       </div>
-      <div class="centerBtn">
-        <button id="lastBtn">View All</button>
+      <div class="centerButton">
+        <button id="lastButton">View All</button>
       </div>
     </section>
   );

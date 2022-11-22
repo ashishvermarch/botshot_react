@@ -1,5 +1,5 @@
 import React from "react";
-import YellowButton from "../../common/YellowButton/YellowButton";
+import YellowButton from "../../common/YellowButton";
 import "./Header.css";
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
       <a href="/">
         <img
           src="https://botshot.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FbotshotWhiteLogo.883763b6.png&w=128&q=75"
-          alt="logo"
+          alt="botshot logo"
         />
       </a>
       <div class="menu">

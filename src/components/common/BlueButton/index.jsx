@@ -1,5 +1,5 @@
 import React from "react";
-import "./BlueButton.css";
+import "./style.css";
 const BlueButton = ({ title }) => {
   return (
     <button class="blueBtn">
